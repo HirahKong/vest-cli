@@ -7,7 +7,7 @@ const pretty = require('pretty-hrtime')
  * Prefix.
  */
 
-const prefix = 'eros'
+const prefix = 'vest'
 const sep = chalk.gray('·')
 
 /**

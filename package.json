@@ -1,21 +1,18 @@
 {
-  "name": "eros-cli",
-  "version": "2.0.9",
-  "description": "A simple CLI for scaffolding weex projects, we provide eros-template to quickly build small and medium sized app.",
+  "name": "vest-cli",
+  "version": "0.0.1",
+  "description": "A simple CLI for scaffolding vest projects",
   "bin": {
-    "eros": "./bin/eros.js"
+    "vest": "./bin/vest.js"
   },
   "repository": {
     "type": "git",
-    "url": "git@git.benmu-health.org:fe/scaffold.git"
+    "url": "https://github.com/HirahKong/vest-cli.git"
   },
   "keywords": [
-    "weex",
-    "vue",
-    "hybird app",
-    "eros"
+    "vest"
   ],
-  "author": "Zero",
+  "author": "Hirah",
   "license": "ISC",
   "dependencies": {
     "babel-core": "^6.25.0",

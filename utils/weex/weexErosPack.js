@@ -41,6 +41,10 @@ function androidHandler(params) {
  var androidZipTarget = path.resolve(process.cwd(), './platforms/' + readConfig.get('localZipFolder').android),
      gradlePropertiesPath = path.resolve(process.cwd(), './platforms/' + readConfig.get('localZipFolder').android + '/../../../../gradle.properties'),
      erosNativeJs = readConfig.get('erosNativeJs');
+    let keys = Object.keys(erosNativeJs);
+    console.log(keys);
+    logger.success('keys -----> ',keys);
+    logger.sep();
 
     logger.sep(); 
     logger.success('compile done! start to pack.'.green);
@@ -59,7 +63,7 @@ GETUI_APPKEY=${erosNativeJs.getui.appKey}
 GETTUI_APPSECRET=${erosNativeJs.getui.appSecret}
 #end
 `
-    fs.writeFileSync(gradlePropertiesPath, content.slice(0, preIndex).concat(info), 'utf8');    
+    fs.writeFileSync(gradlePropertiesPath, content.slice(0, preIndex).concat(info), 'utf8');
 
     logger.log('copy  -----> bundle.zip');
     shell.cp('-r' , params.jsZipPath, androidZipTarget + '/bundle.zip');

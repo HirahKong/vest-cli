@@ -34,7 +34,7 @@ function fixempty(str, len, tag) {
 
 function commonPrint() {
     console.info('');
-    console.info('eros-cli:');
+    console.info('vest-cli:');
     console.info('');
     console.info('The following instructions are provided to help you build app !'.green);
     console.info('');
